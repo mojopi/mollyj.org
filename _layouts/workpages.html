@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<section id='{{ page.slug}}-page' class='work-page'>
+	{% if page.slug %}
+    {% endif %}
+    <img id='stars' src='stars.png'>
+    <h1>{{ page.title }}</h1>
+    <img id="header-{{ page.slug }}" src="header-{{ page.slug }}.png">
+	{{ content }}
+</section>

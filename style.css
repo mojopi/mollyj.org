@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+    font-family: 'Avenir';
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+    margin-top: 0.75rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
+}
+
+
+section {
+    margin: 0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 1em;
+}
+
+section {
+    /*Workaround to fix extra space between sections, which for some reason would disappear when we set the border*/
+    /*border: 1px dotted black;*/
+    margin-bottom: -1rem;
+}
+
+.section-container {
+    background-size: cover;
+}
+
+#home {
+    background-color: white;
+}
+
+#about {
+    width: 120%;
+    background-image: url(sky-1.png);
+}
+
+#work {
+    background-image: url(sky-2.png);
+    top: -19px;
+    position: relative;
+    height: 600%;
+    width: 120%;
+    background-repeat: repeat;
+}
+
+#more-work {
+    background-image: url(sky-2.png);
+    top: -19px;
+    position: relative;
+    height: 600%;
+    width: 120%;
+    background-repeat: repeat;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00A9D8;
+    text-decoration-color: #00A9D8;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "Alphabetized Cassette Tapes";
+    src: url(alphabetized-cassette-tapes.ttf);
+}
+
+nav {
+    min-width: 5em;
+    text-align: center;
+    /*        background-color: rgba(255, 255, 255, 0.8);
+*/
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: "Alphabetized Cassette Tapes";
+    font-size: 50px;
+}
+
+#stars {
+    width: 488px;
+    position: fixed;
+    right: 13%;
+    top: -15%;
+}
+
+.work-page #stars {
+    z-index: -1;
+}
+
+#stargazer {
+    /*min-width: 312.5px;*/
+    width: 550px;
+    position: absolute;
+    right: 0.5%;
+    bottom: 7.5%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    #stargazer {
+        right: -21.5%;
+    }
+    .icon {
+        padding: 20%;
+        right: 5%;
+    }
+    .work-description {
+        min-width: 300px;
+        padding-right: 20px;
+        left: 20px
+    }
+}
+
+.description {
+    position: relative;
+    left: 10%;
+    width: 50%;
+    font-family: "alphabetized cassette tapes";
+    font-size: 35px;
+}
+
+#envelope {
+    height: 55%;
+    width: 19%;
+}
+
+.icon {
+    padding: 0px;
+    color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    z-index: 1;
+}
+
+.icon-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.icon-subtitle {
+    font-family: "alphabetized cassette tapes";
+    font-size: 30px;
+}
+
+#healey {
+    background-image: url(icon-healey.png);
+    position: absolute;
+    top: 17%;
+    left: -7%;
+}
+
+#healey .icon-title {
+    margin-top: 10px;
+}
+
+#healey .icon-subtitle {
+    margin-top: 55px;
+}
+
+#codman {
+    background-image: url(icon-codman.png);
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    margin-bottom: 10px;
+}
+
+#codman .icon-subtitle {
+    margin-top: 70px;
+}
+
+#codman .icon-title {
+    margin-top: 0px;
+}
+
+#dalton {
+    background-image: url(icon-dalton.png);
+    position: absolute;
+    top: 42%;
+    left: 0%;
+}
+
+#dalton .icon-title {
+    margin-top: -25px;
+}
+
+#dalton .icon-subtitle {
+    margin-top: 90px;
+}
+
+#gsp {
+    background-image: url(icon-gsp.png);
+    position: absolute;
+    top: 89%;
+    left: 30%;
+}
+
+#gsp .icon-title {
+    margin-top: -20px;
+}
+
+#gsp .icon-subtitle {
+    margin-top: 90px;
+}
+
+#shofco {
+    background-image: url(icon-shofco.png);
+    position: absolute;
+    top: 89%;
+    left: -10%;
+}
+
+#shofco .icon-title {
+    margin-top: 0px;
+}
+
+#shofco .icon-subtitle {
+    margin-top: 50px;
+}
+
+#urbanature {
+    background-image: url(icon-urbanature.png);
+    position: absolute;
+    top: 42%;
+    left: 31%;
+}
+
+#urbanature .icon-title {
+    margin-top: -15px;
+}
+
+#urbanature .icon-subtitle {
+    margin-top: 70px;
+}
+
+#deschooling {
+    background-image: url(icon-urbanature.png);
+    position: absolute;
+    top: 110%;
+    left: 60%;
+}
+
+#deschooling .icon-title {
+    margin-top: -15px;
+}
+
+#deschooling .icon-subtitle {
+    margin-top: 70px;
+}
+
+#lunarchive .icon-title {
+    margin-top: -35px;
+    margin-left: -30px;
+}
+
+#lunarchive .icon-subtitle {
+    margin-top: 70px;
+}
+
+#lunarchive {
+    background-image: url(icon-lunarchive.png);
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    top: 86%;
+    left: 62%;
+}
+
+#sop {
+    background-image: url(icon-sop.png);
+    position: absolute;
+    top: 68%;
+    left: 9%;
+}
+
+#sop .icon-title {
+    margin-top: -30px;
+}
+
+#sop .icon-subtitle {
+    margin-top: 110px;
+}
+
+#colonie {
+    background-image: url(icon-colonie.png);
+    position: absolute;
+    top: 105%;
+    left: 5%;
+}
+
+#colonie .icon-title {
+    margin-top: 15px;
+}
+
+#colonie .icon-subtitle {
+    margin-top: 40px;
+}
+
+#dgmd {
+    background-image: url(icon-colonie.png);
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#dgmd .icon-title {
+    margin-top: 15px;
+}
+
+#dgmd .icon-subtitle {
+    margin-top: 40px;
+}
+
+#seals {
+    background-image: url(icon-seals.png);
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+
+#seals .icon-title {
+    margin-top: -20px;
+}
+
+#seals .icon-subtitle {
+    margin-top: 40px;
+}
+
+.work-description {
+    font-family: "alphabetized cassette tapes";
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#header-healey {
+    height: 200px;
+    width: 400px;
+    left: 0%;
+    top: 0%;
+    position: relative;
+    z-index: 2;
+}
+
+#header-urbanature {
+    height: 60px;
+    width: 200px;
+    left: 10%;
+    top: 10%;
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.footer-urbanature {
+    width: 100%;
+    height: 30%;
+}
+
+#footer-deschooling {
+    height: 50%;
+    width: 60%;
+    border-radius: 10%;
+}
+
+#header-codman {
+    height: 200px;
+    width: 200px;
+    left: 0%;
+    top: 0%;
+    position: relative;
+    z-index: 2;
+}
+
+#header-dalton {
+    width: 200px;
+    height: 200px;
+}
+
+#header-sop {
+    width: 400px;
+    height: 200px;
+}
+
+#footer-lunarchive {
+    height: 50%;
+    width: 60%;
+    border-radius: 10%;
+}
+
+#footer-colonie {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+#footer-animals {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

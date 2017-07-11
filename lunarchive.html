@@ -1,87 +1,10 @@
-<!DOCTYPE html>
-<html>
+---
+layout: workpages
+title: Lunarchive
+---
 
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
-    <title>Lunarchive</title>
-    <style>
-    section {
-        margin: 0;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: 100vh;
-        position: relative;
-    }
-    
-    section {
-        /*Workaround to fix extra space between sections, which for some reason would disappear when we set the border*/
-        /*border: 1px dotted black;*/
-        margin-bottom: -1rem;
-    }
-    
-    .section-container {
-        background-size: cover;
-    }
-    
-    nav {
-        /*padding-left:100px;
-        padding-top: 541px;*/
-        font-family: "alphabetized cassette tapes";
-        background-color: rgba(255, 255, 255, 0.8);
-        font-size: 40px;
-        position: relative;
-        top: 20px;
-        left: 20px;
-        /*        transform: translateX(-50%) translateY(-50%);
-*/
-    }
-    
-    #stars {
-        width: 548px;
-        position: fixed;
-        right: 10%;
-        top: 0%;
-        z-index: -1;
-    }
-    
-    @media (max-width: 700px) {
-        nav {
-            min-width: 300px;
-            padding-right: 20px;
-            left: 20px
-        }
-        #footer {
-            min-width: 200px;
-        }
-    }
-    
-    h1 {
-        margin-top: 0.75rem;
-        font-size: 5rem;
-        font-weight: bold;
-        font-family: 'Cabin Sketch', cursive;
-        line-height: 5.5rem;
-    }
-    
-    #footer {
-        height: 50%;
-        width: 60%;
-        border-radius: 10%;
-    }
-    </style>
-</head>
-
-<body>
-    <img id='stars' src='stars.png'>
-    <div id='home' class='section-container'>
-        <section>
-            <h1>Lunarchive</h1>
-            <nav>
-                <p>This project was a gift for a friend. I wanted to capture the beginning of our friendship, a time in which we often texted each other about ideas and the moon. To capture the energy and feeling of this moment in our friendship, I made a website.
-                 <p> It shows a hand holding an i-phone in front of the night sky. In the sky you can see the moon (depicted in it's current phase) and twinkling stars. The website pulls from the weather underground API to accurately represent the moon's current phase. The stars aren't "just" stars. If you click on one, a text message conversation will appear on the phone. The texts will be from a day in 2015 when the moon was the same phase as it right now.</p>
-            </nav>
-            <img id="footer" src="icon-lunarchive.png">
-</body>
-
-</html>
+<div class="work-description">
+    <p>This project was a gift for a friend. I wanted to capture the beginning of our friendship, a time in which we often texted each other about ideas and the moon. To capture the energy and feeling of this moment in our friendship, I made a website.
+        <p> It shows a hand holding an i-phone in front of the night sky. In the sky you can see the moon (depicted in it's current phase) and twinkling stars. The website pulls from the weather underground API to accurately represent the moon's current phase. The stars aren't "just" stars. If you click on one, a text message conversation will appear on the phone. The texts will be from a day in 2015 when the moon was the same phase as it right now.</p>
+</div>
+<img src="footer-lunarchive.png">
