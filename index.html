@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Molly Josephs</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Avenir';
+    }
+
+    h1 {
+        font-weight: bold;
+        font-family: 'Cabin Sketch', cursive;
+        margin-top: 0.75rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    /* #title {
+        margin-top: 0.75rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+    #title2 {
+        margin-top: 0.75rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    #title3 {
+    margin-top: 0.75rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-top:3%;
+    }
+
+    #title4 {
+    margin-top: 0.75rem;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    }*/
+
+    section {
+        margin: 0;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    section {
+        /*Workaround to fix extra space between sections, which for some reason would disappear when we set the border*/
+        /*border: 1px dotted black;*/
+        margin-bottom: -1rem;
+    }
+
+    .section-container {
+        background-size: cover;
+    }
+
+    #home {
+        background-color: white;
+    }
+
+    #about {
+        width: 120%;
+        background-image: url(sky-1.png);
+    }
+
+    #work {
+        background-image: url(sky-2.png);
+        top: -19px;
+        position: relative;
+        height: 600%;
+        width: 120%;
+        background-repeat: repeat;
+    }
+
+    #more-work {
+        background-image: url(sky-2.png);
+        top: -19px;
+        position: relative;
+        height: 600%;
+        width: 120%;
+        background-repeat: repeat;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00A9D8;
+        text-decoration-color: #00A9D8;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    @font-face {
+        font-family: "Alphabetized Cassette Tapes";
+        src: url(alphabetized-cassette-tapes.ttf);
+    }
+
+    nav {
+        min-width: 5em;
+        text-align: center;
+        /*        background-color: rgba(255, 255, 255, 0.8);
+*/
+        font-size: 24px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%) translateY(-50%);
+        font-family: "Alphabetized Cassette Tapes";
+        font-size: 50px;
+    }
+
+    #stars {
+        width: 488px;
+        position: fixed;
+        right: 13%;
+        top: -15%;
+    }
+
+    #stargazer {
+        /*min-width: 312.5px;*/
+        width: 550px;
+        position: absolute;
+        right: 0.5%;
+        bottom: 7.5%;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+        #stargazer {
+            right: -21.5%;
+        }
+        .icon {
+            padding: 20%;
+            right: 5%;
+        }
+    }
+
+    .description {
+        padding-top: 20%;
+        position: relative;
+        left: 10%;
+        width: 50%;
+        font-family: "alphabetized cassette tapes";
+        font-size: 35px;
+    }
+
+    #envelope {
+        height: 55%;
+        width: 19%;
+    }
+
+    .icon {
+        padding: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .icon-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        font-family: 'Cabin Sketch', cursive;
+    }
+
+    .icon-subtitle {
+        font-family: "alphabetized cassette tapes";
+        font-size: 30px;
+    }
+
+    #healey {
+        background-image: url(icon-healey.png);
+        position: absolute;
+        top: 17%;
+        left: -7%;
+    }
+
+    #healey .icon-title {
+        margin-top: 10px;
+    }
+
+    #healey .icon-subtitle {
+        margin-top: 55px;
+    }
+
+    #codman {
+        background-image: url(icon-codman.png);
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        margin-bottom: 10px;
+    }
+
+    #codman .icon-subtitle {
+        margin-top: 70px;
+    }
+
+    #codman .icon-title {
+        margin-top: 0px;
+    }
+
+    #dalton {
+        background-image: url(icon-dalton.png);
+        position: absolute;
+        top: 42%;
+        left: 0%;
+    }
+
+    #dalton .icon-title {
+        margin-top: -25px;
+    }
+
+    #dalton .icon-subtitle {
+        margin-top: 90px;
+    }
+
+    #gsp {
+        background-image: url(icon-gsp.png);
+        position: absolute;
+        top: 89%;
+        left: 30%;
+    }
+
+    #gsp .icon-title {
+        margin-top: -20px;
+    }
+
+    #gsp .icon-subtitle {
+        margin-top: 90px;
+    }
+
+    #shofco {
+        background-image: url(icon-shofco.png);
+        position: absolute;
+        top: 89%;
+        left: -10%;
+    }
+
+    #shofco .icon-title {
+        margin-top: 0px;
+    }
+
+    #shofco .icon-subtitle {
+        margin-top: 50px;
+    }
+
+    #urbanature {
+        background-image: url(icon-urbanature.png);
+        position: absolute;
+        top: 42%;
+        left: 31%;
+    }
+
+    #urbanature .icon-title {
+        margin-top: -15px;
+    }
+
+    #urbanature .icon-subtitle {
+        margin-top: 70px;
+    }
+
+    #deschooling {
+        background-image: url(icon-urbanature.png);
+        position: absolute;
+        top: 110%;
+        left: 60%;
+    }
+
+    #deschooling .icon-title {
+        margin-top: -15px;
+    }
+
+    #deschooling .icon-subtitle {
+        margin-top: 70px;
+    }
+
+    #lunarchive .icon-title {
+        margin-top: -35px;
+        margin-left: -30px;
+    }
+
+    #lunarchive .icon-subtitle {
+        margin-top: 70px;
+    }
+
+    #lunarchive {
+        background-image: url(icon-lunarchive.png);
+        position: absolute;
+        width: 73px;
+        height: 73px;
+        top: 86%;
+        left: 62%;
+    }
+
+    #sop {
+        background-image: url(icon-sop.png);
+        position: absolute;
+        top: 68%;
+        left: 9%;
+    }
+
+    #sop .icon-title {
+        margin-top: -30px;
+    }
+
+    #sop .icon-subtitle {
+        margin-top: 110px;
+    }
+
+    #colonie {
+        background-image: url(icon-colonie.png);
+        position: absolute;
+        top: 105%;
+        left: 5%;
+    }
+
+    #colonie .icon-title {
+        margin-top: 15px;
+    }
+
+    #colonie .icon-subtitle {
+        margin-top: 40px;
+    }
+
+    #dgmd {
+        background-image: url(icon-colonie.png);
+        position: absolute;
+        top: 30%;
+        left: 60%;
+    }
+
+    #dgmd .icon-title {
+        margin-top: 15px;
+    }
+
+    #dgmd .icon-subtitle {
+        margin-top: 40px;
+    }
+
+    #seals {
+        background-image: url(icon-seals.png);
+        position: absolute;
+        top: 60%;
+        left: 55%;
+    }
+
+    #seals .icon-title {
+        margin-top: -20px;
+    }
+
+    #seals .icon-subtitle {
+        margin-top: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <img id='stars' src='stars.png'>
+    <div id='home' class='section-container'>
+        <section>
+            <h1 id='title'>Molly Josephs</h1>
+            <nav>
+                <ul>
+                    <a href="#about">
+                        <li>about</li>
+                    </a>
+                    <a href="#work">
+                        <li>work</li>
+                    </a>
+                    <a href="#notes">
+                        <li>notes</li>
+                    </a>
+                </ul>
+            </nav>
+            <img id='stargazer' src='stargazer.png'>
+        </section>
+    </div>
+    <div id='about' class='section-container'>
+        <section>
+            <div class='description'>
+                <h1 id='title2'>Molly Josephs</h1>
+                <p>
+                    Welcome to the small, digital universe of my work and projects!
+                </p>
+                <p>
+                    In the physical world, I work at sprout &amp; co. We're starting a small, alternative, public high school in Somerville, MA called Powderhouse Studios.
+                </p>
+                <p>
+                    Currently, I'm doing projects around my interest in storytelling and my love of plants and animals. If you want to chat, please reach out and email me!
+                </p>
+                <p>
+                    <a href='mailto:molly@thesprouts.org'><img id="envelope" src="envelope.png"></a>
+                </p>
+            </div>
+        </section>
+    </div>
+    <div id='work' class='section-container'>
+        <section>
+            <h1 id="title3">Work</h1>
+            <a href="healey.html">
+                <div class="icon" id="healey">
+                    <p class="icon-title">
+                        healey</p>
+                    <p class="icon-subtitle">pilot program</p>
+                </div>
+            </a>
+            <a href="lunarchive.html">
+                <div class="icon" id="lunarchive">
+                    <p class="icon-title">
+                        lunarchive</p>
+                    <p class="icon-subtitle">documenting friendship</p>
+                </div>
+            </a>
+            <a href="codman.html">
+                <div class="icon" id="codman">
+                    <p class="icon-title">
+                        codman</p>
+                    <p class="icon-subtitle">a school in dorchester</p>
+                </div>
+            </a>
+            <a href="dalton.html">
+                <div class="icon" id="dalton">
+                    <p class="icon-title">
+                        dalton</p>
+                    <p class="icon-subtitle">6 yrs teaching in NYC</p>
+                </div>
+            </a>
+            <a href="sop.html">
+                <div class="icon" id="sop">
+                    <p class="icon-title">
+                        sop</p>
+                    <p class="icon-subtitle">conflict resolution camp</p>
+                </div>
+            </a>
+            <a href="urbanature.html">
+                <div class="icon" id="urbanature">
+                    <p class="icon-title">
+                        urbanature</p>
+                    <p class="icon-subtitle">noticing urban wildlife</p>
+                </div>
+            </a>
+            <a href="deschooling.html">
+                <div class="icon" id="deschooling">
+                    <p class="icon-title">
+                        deschooling</p>
+                    <p class="icon-subtitle">a love story</p>
+                </div>
+            </a>
+            <a href="dgmd.html">
+                <div class="icon" id="dgmd">
+                    <p class="icon-title">
+                        dgmd</p>
+                    <p class="icon-subtitle">creative computation course</p>
+                </div>
+            </a>
+            <a href="gsp.html">
+                <div class="icon" id="gsp">
+                    <p class="icon-title">
+                        gsp</p>
+                    <p class="icon-subtitle">program in Joburg</p>
+                </div>
+            </a>
+            <a href="shofco.html">
+                <div class="icon" id="shofco">
+                    <p class="icon-title">
+                        shofco</p>
+                    <p class="icon-subtitle">science in kibera</p>
+                </div>
+            </a>
+            <a href="colonie.html">
+                <div class="icon" id="colonie">
+                    <p class="icon-title">
+                        la colonie</p>
+                    <p class="icon-subtitle">camp in moorea</p>
+                </div>
+            </a>
+            <a href="animals.html">
+                <div class="icon" id="seals">
+                    <p class="icon-title">
+                        animals</p>
+                    <p class="icon-subtitle">seals + dolphins</p>
+                </div>
+            </a>
+        </section>
+    </div>
+    <div id='more-work' class='section-container'>
+        <section>
+        </section>
+    </div>
+    <div id='notes' class='section-container'>
+        <section>
+            <h1 class="descriptoin">Notes + Resonances</h1>
+            <p class="description">
+                <a href="mj-resonances.tumblr.com">Here</a> is my tumblr page where I'm collecting things I find exciting and interesting. I'm currently working on some longer-form posts which I'll be adding a link to soon.</p>
+        </section>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>
