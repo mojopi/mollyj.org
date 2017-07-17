@@ -79,7 +79,7 @@ nav li {
 }
 
 nav {
-    min-width: 5em;
+    min-width: 7em;
     text-align: center;
     /*        background-color: rgba(255, 255, 255, 0.8);
 */
@@ -115,8 +115,11 @@ nav {
     .container {
         width: 100%;
     }
+
+
     #stargazer {
         right: -21.5%;
+        min-width: 550px;
     }
     .icon {
         padding: 20%;
