@@ -8,7 +8,7 @@ h1 {
     font-family: 'Cabin Sketch', cursive;
     margin-top: 0.75rem;
     font-size: 5rem;
-    line-height: 5.5rem;
+    line-height: 4.5rem;
 }
 
 
@@ -111,23 +111,7 @@ nav {
     bottom: 7.5%;
 }
 
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-    #stargazer {
-        right: -21.5%;
-    }
-    .icon {
-        padding: 20%;
-        right: 5%;
-    }
-    .work-description {
-        min-width: 300px;
-        padding-right: 20px;
-        left: 20px
-    }
-}
+
 
 .description {
     position: relative;
@@ -153,6 +137,10 @@ nav {
     z-index: 1;
 }
 
+.work-container .icon {
+    position: absolute;
+}
+
 .icon-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -166,7 +154,6 @@ nav {
 
 #healey {
     background-image: url(icon-healey.png);
-    position: absolute;
     top: 17%;
     left: -7%;
 }
@@ -181,7 +168,6 @@ nav {
 
 #codman {
     background-image: url(icon-codman.png);
-    position: absolute;
     top: 15%;
     left: 32%;
     margin-bottom: 10px;
@@ -197,7 +183,6 @@ nav {
 
 #dalton {
     background-image: url(icon-dalton.png);
-    position: absolute;
     top: 42%;
     left: 0%;
 }
@@ -212,7 +197,6 @@ nav {
 
 #gsp {
     background-image: url(icon-gsp.png);
-    position: absolute;
     top: 89%;
     left: 30%;
 }
@@ -227,7 +211,6 @@ nav {
 
 #shofco {
     background-image: url(icon-shofco.png);
-    position: absolute;
     top: 89%;
     left: -10%;
 }
@@ -242,7 +225,6 @@ nav {
 
 #urbanature {
     background-image: url(icon-urbanature.png);
-    position: absolute;
     top: 42%;
     left: 31%;
 }
@@ -257,7 +239,6 @@ nav {
 
 #deschooling {
     background-image: url(icon-urbanature.png);
-    position: absolute;
     top: 110%;
     left: 60%;
 }
@@ -281,7 +262,6 @@ nav {
 
 #lunarchive {
     background-image: url(icon-lunarchive.png);
-    position: absolute;
     width: 73px;
     height: 73px;
     top: 86%;
@@ -290,7 +270,6 @@ nav {
 
 #sop {
     background-image: url(icon-sop.png);
-    position: absolute;
     top: 68%;
     left: 9%;
 }
@@ -305,7 +284,6 @@ nav {
 
 #colonie {
     background-image: url(icon-colonie.png);
-    position: absolute;
     top: 105%;
     left: 5%;
 }
@@ -320,7 +298,6 @@ nav {
 
 #dgmd {
     background-image: url(icon-colonie.png);
-    position: absolute;
     top: 30%;
     left: 60%;
 }
@@ -335,7 +312,6 @@ nav {
 
 #seals {
     background-image: url(icon-seals.png);
-    position: absolute;
     top: 60%;
     left: 55%;
 }
@@ -425,4 +401,216 @@ nav {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+
+@media (max-device-width: 667px) {
+    .container {
+        width: 100%;
+    }
+    #stargazer {
+        right: -21.5%;
+    }
+    /*.icon {
+        padding: 20%;
+        right: 5%;
+    }*/
+    .work-description {
+        min-width: 300px;
+        padding-right: 20px;
+        left: 20px
+    }
+
+    .icon {
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+    }
+
+    #healey {
+        left: -10%;
+        top:20%;
+    }
+
+    #healey .icon-title {
+        margin-top: -3px;
+    }
+
+    #healey .icon-subtitle {
+        margin-top: 40px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+    #codman {
+        top: 21%;
+        left: 52%;
+    }
+
+    #codman .icon-title {
+        margin-top: -3px;
+    }
+
+    #codman .icon-subtitle {
+        margin-top: 40px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+    #dalton {
+        top: 46%;
+        left: 15%;
+    }
+
+    #dalton .icon-title {
+        margin-top: -25px;
+    }
+
+    #dalton .icon-subtitle {
+        margin-top: 60px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+
+    #urbanature {
+        top: 74%;
+        left: 43%;
+    }
+
+    #urbanature .icon-title {
+        margin-top: -15px;
+    }
+
+    #urbanature .icon-subtitle {
+        margin-top: 40px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+    #dgmd {
+        top: 50%;
+        left: 66%;
+    }
+
+    #dgmd .icon-title {
+        margin-top: -10px;
+    }
+
+    #dgmd .icon-subtitle {
+        margin-top: 35px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+    #sop {
+        left: -10%;
+    }
+
+    #sop .icon-title {
+        margin-top: -30px;
+    }
+
+    #sop .icon-subtitle {
+        margin-top: 75px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+
+    #gsp {
+        top: 95%;
+        left: 6%;
+    }
+
+    #gsp .icon-title {
+        margin-top: -15px;
+    }
+
+    #gsp .icon-subtitle {
+        margin-top: 45px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+
+
+    #shofco {
+        top: 118%;
+    }
+
+    #shofco .icon-title {
+        margin-top: -10px;
+    }
+
+    #shofco .icon-subtitle {
+        margin-top: 25px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+
+    #deschooling {
+        top: 117%;
+        left:50%;
+    }
+
+    #deschooling .icon-title {
+        margin-top: -15px; 
+        margin-left:-15px;
+    }
+
+    #deschooling .icon-subtitle {
+        margin-top: 40px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+
+    #seals {
+        top: 138%;
+    }
+
+    #seals .icon-title {
+        margin-top: -25px; 
+        margin-left:15px;
+    }
+
+    #seals .icon-subtitle {
+        margin-left: 15px;
+        margin-top: 20px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+     #colonie {
+        top: 148%;
+    }
+
+    #colonie .icon-title {
+        margin-top: -25px; 
+        margin-left:15px;
+    }
+
+    #colonie .icon-subtitle {
+        margin-left: 15px;
+        margin-top: 20px;
+        left: -20%;
+        line-height: .75em;
+    }
+
+    #lunarchive {
+        top: 164%;
+    }
+
+    #lunarchive .icon-title {
+        margin-top: -35px; 
+        margin-left:-25px;
+    }
+
+    #lunarchive .icon-subtitle {
+        margin-top: 75px;
+        left: -20%;
+        line-height: .75em;
+    }
 }
