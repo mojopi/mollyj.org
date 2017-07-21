@@ -36,8 +36,13 @@ section {
     background-color: white;
 }
 
-#about {
+#about,
+#work,
+/*#more-work {
     width: 120%;
+}*/
+
+#about {
     background-image: url(sky-1.png);
 }
 
@@ -46,7 +51,6 @@ section {
     top: -19px;
     position: relative;
     height: 600%;
-    width: 120%;
     background-repeat: repeat;
 }
 
@@ -55,7 +59,6 @@ section {
     top: -19px;
     position: relative;
     height: 600%;
-    width: 120%;
     background-repeat: repeat;
 }
 
@@ -427,9 +430,18 @@ nav {
         height: 100px;
     }
 
+    #about,
+    {
+        width: 100%;
+    }
+
+    {
+        width: 100%;
+    }
+
     #healey {
         left: -10%;
-        top:20%;
+        top: 20%;
     }
 
     #healey .icon-title {
@@ -552,12 +564,12 @@ nav {
 
     #deschooling {
         top: 117%;
-        left:50%;
+        left: 50%;
     }
 
     #deschooling .icon-title {
-        margin-top: -15px; 
-        margin-left:-15px;
+        margin-top: -15px;
+        margin-left: -15px;
     }
 
     #deschooling .icon-subtitle {
@@ -572,8 +584,8 @@ nav {
     }
 
     #seals .icon-title {
-        margin-top: -25px; 
-        margin-left:15px;
+        margin-top: -25px;
+        margin-left: 15px;
     }
 
     #seals .icon-subtitle {
@@ -583,13 +595,13 @@ nav {
         line-height: .75em;
     }
 
-     #colonie {
+    #colonie {
         top: 148%;
     }
 
     #colonie .icon-title {
-        margin-top: -25px; 
-        margin-left:15px;
+        margin-top: -25px;
+        margin-left: 15px;
     }
 
     #colonie .icon-subtitle {
@@ -604,8 +616,8 @@ nav {
     }
 
     #lunarchive .icon-title {
-        margin-top: -35px; 
-        margin-left:-25px;
+        margin-top: -35px;
+        margin-left: -25px;
     }
 
     #lunarchive .icon-subtitle {
