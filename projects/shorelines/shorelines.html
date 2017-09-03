@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <style>
+.top-bottom {
+        width: 100%;
+        height: 20%;
+        background-color: orange;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    #header-photo {
+        top: 100%;
+        background-image: url(header.jpg);
+        background-position: 30% 48%;
+        border: solid;
+        border-color: white;
+    }
+
+    #footer-photo {
+        top: 300%;
+        background-image: url(footer.jpg);
+        background-position: 30% 27%;
+    }
+
+    .section {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #section1 {
+        top: 100%;
+        background-image: url(background1.png);
+    }
+
+    .title {
+        font-family: 'Cabin Sketch', cursive;
+        font-size: 3.5em;
+        /*        position: absolute;
+*/
+        top: 5%;
+        color: grey;
+    }
+    /* #titleA {
+        left: 2%;
+    }
+
+    #titleB {
+        left: 65%;
+    }*/
+
+    #text {
+
+        background-color: white;
+        margin: center;
+        width: 40%;
+        left: 55%;
+        height: 100%;
+        /*        margin-left: 10%;
+*/
+        position: relative;
+        top: 0%;
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+    }
+
+    #gifs-container1 {
+        top: 0%;
+        position: absolute;
+        width: 50%;
+        height: 90%;
+    }
+
+    #gifs-container2 {
+        top: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gifs2 {
+
+        width:44%;
+        height:40%;
+    }
+
+        
+
+</style>
+</head>
+
+<body>
+    <div id="gifs-container1"></div>
+    <script>
+    var container = document.getElementById("gifs-container1");
+
+    function makeSquare(i) {
+        var square = document.createElement('div');
+        container.appendChild(square);
+        square.classList.add("gifs1");
+        square.style.position = "relative";
+        square.style.width = "100%";
+        square.style.margin = "center";
+        square.style.height = "50%";
+        square.style.backgroundPosition = "center";
+        square.style.margin = "10px";
+        square.style.backgroundRepeat = "no-repeat";
+        square.style.border = "1px";
+
+        // square.style.backgroundColor = "green";
+
+        square.style.backgroundImage = "url(" + i + ".gif)";
+
+        square.style.backgroundSize = "cover";
+        square.style.id = "square" + i;
+    };
+
+    for (var i = 1; i < 3; i++) { makeSquare(i); }
+    </script>
+    <div id=gifs-container2> </div>
+    <script>
+    var container2 = document.getElementById("gifs-container2");
+
+    function makeSquare2(i) {
+        var square = document.createElement('div');
+        container2.appendChild(square);
+        square.classList.add("gifs2");
+        // square.style.width = "44%";
+        square.style.margin = "center";
+        // square.style.height = "40%";
+        square.style.display = "inline-block";
+        square.style.margin = "10px";
+        square.style.backgroundRepeat = "no-repeat";
+        square.style.border = "1px";
+
+        // square.style.backgroundColor = "green";
+
+        square.style.backgroundImage = "url(" + i + ".gif)";
+
+        square.style.backgroundSize = "cover";
+        square.style.id = "square" + i;
+    };
+
+    // for (var i = 1; i < 3; i++) { makeSquareB(i); }
+
+
+
+    for (var i = 3; i < 18; i++) { makeSquare2(i); }
+    </script>
+    <!--  <section class="section" id="section1">
+     <div class="top-bottom" id="header-photo"> -->
+    <!--  <p class="title" id="titleA">Exploring</p>
+            <p class="title" id="titleB">Shorelines</p> -->
+    </div>
+    <div id="text">
+        <p class="title">Exploring Shorelines</p>
+        <p>I'm interested in using photography and gif-making to improve my obervations and investigations of shoreline invertebrates (e.g. crabs, horseshoe crabs).
+            <br>
+            <br> Similar to how <a href="https://en.wikipedia.org/wiki/Eadweard_Muybridge">Edweard Muybirdge</a> used early movie-making technology to study locomotion (e.g. <a href="https://www.youtube.com/watch?v=IEqccPhsqgA">the gaits of a horse</a>) and biomechanics, I'd like to use gifs in a similar way. I think they are particularly well-suited to observing and documenting invertebrates because it breaks movement that may seem quite foreign and subtle do us into multiple parts and allows us to see it better.
+            <br>
+            <br> I want to know how they retract their limbs, potrude their eyes, go into their shells. I'm also interested in what triggers different behaviors and how they choose their shells.
+            <br>
+            <br> After one photo shoot, I plan on researching the following questions and writing about them.
+            <ul>
+                <li>How are hermit crabs attached to their shell and how do they retract into it so quickly?</li>
+                <li>How do their eyes work and how do they retract and protrude the way they do?</li>
+                <li>What do they eat and how are they adapted to eat it?</li>
+                <li>Why do hermit crabs have iridescent claws?</li>
+            </ul>
+            <br> After researching hermit crab anatomy, biomechanics, and morphology, I'd like to make robot/puppet horshoecrabs who move and sense in similar ways to the creatures I observed.</p>
+    </div>
+
+    
+        
+<style>
+
+  @media (max-device-width: 667px) {
+        #text {
+            margin-left: 3%;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+        .gifs1 {
+            height: 30vh;
+            width: 50vw;
+            background-position: center;
+        }
+    
+
+    .gifs2 {
+        height: 30%;
+        width: 65%;
+        background-position: center;
+    }
+
+
+#gifs-container1 {
+    top: 17%;
+}
+
+
+
+
+#gifs-container2 {
+
+    top:105%;
+    width:80%;
+    height:100%;
+}
+
+}
+    
+
+</style>
+ 
+    </section>
+    <!--     <div class="top-bottom" id="footer-photo"></div>
+ -->
+</body>
+
+</html>

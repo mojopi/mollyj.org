@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memory demo for Molly (1 September 2017)</title>
+    <style>
+    body {
+        margin: 0;
+        background-image:url("heart.png");
+        background-size:cover;
+    }
+
+    .memory {
+        border: 1px dotted black;
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        float: left;
+    }
+
+    #text-display {
+        color: black;
+        font-size: 4em;
+        position: fixed;
+        height: 50vh;
+        width: 100vw;
+        bottom: 0;
+        background-color: white;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+    <div id='memory-1' class='memory'>
+    </div>
+    <div id='memory-2' class='memory'>
+    </div>
+    <div id='memory-3' class='memory'>
+    </div>
+    <div id='memory-4' class='memory'>
+    </div>
+    <div id='memory-5' class='memory'>
+    </div>
+    <div id='memory-6' class='memory'>
+    </div>
+    <div id='memory-7' class='memory'>
+    </div>
+    <div id='text-display'>
+    </div>
+    <audio id='fart' src='./fart.m4a'></audio>
+    <script>
+    // This is the div that will display our text
+    var textDisplay = document.querySelector('#text-display');
+
+    // This is an array of all the elements with class memory
+    var memories = Array.from(document.querySelectorAll('.memory'));
+
+    // This is a dictionary with each key an id and each value the memory text I want to show
+    var memoryAssociations = {
+        "memory-1": {
+            "text": "This is my first memory.",
+            "imageURL": "https://images-na.ssl-images-amazon.com/images/I/71Z21pLAR2L.png"
+        },
+        "memory-2": {
+            "text": "This is my second memory.",
+            "imageURL": "https://res.cloudinary.com/urbandictionary/image/upload/a_exif,c_fit,h_200,w_200/v1395185546/l2jr1d64b57htqmsnqhp.jpg"
+        },
+        "memory-3": {
+            "text": "This is my third memory.",
+            "imageURL": "http://fart.watch/images/logo-icon.png"
+        },
+        "memory-4": {
+            "text": "This is my fourth memory.",
+            "imageURL": "http://assets.rebelcircus.com/blog/wp-content/uploads/2017/02/fart-spongebob.jpg"
+        },
+        "memory-5": {
+            "text": "This is my fifth memory.",
+            "imageURL": "https://i.ytimg.com/vi/IPUfhcL7Tfo/hqdefault.jpg"
+        },
+        "memory-6": {
+            "text": "This is my sixth memory.",
+            "imageURL": "https://cdn1.dailyhealthpost.com/wp-content/uploads/2016/09/26/good-fart-918x482.jpg"
+        },
+        "memory-7": {
+            "text": "This is my seventh memory.",
+            "imageURL": "http://worldartsme.com/images/balloon-fart-clipart-1.jpg"
+        },
+    };
+
+    var fart = document.querySelector('#fart');
+    // This is a function which, when given an element, attaches an event listener to show our memory
+    function showMemory(element) {
+        // Take the element
+        element.addEventListener('mouseenter', function(event) { // When the mouse enters the div
+            // Create the message to display by looking at the id of the element triggering the event (event.target.id) and looking up the associated memory text in memoryAssociations
+            var messageToDisplay = memoryAssociations[event.target.id].text;
+            var imageURL = memoryAssociations[event.target.id].imageURL;
+
+            // Then put that message in our textDisplay div
+            textDisplay.innerText = messageToDisplay;
+            textDisplay.style.backgroundImage = 'url(' + imageURL + ')';
+            fart.play();
+            // Or if you want to type it out, 100ms at a time…
+            // Array.from(messageToDisplay).forEach(function(letter, index) { // setTimeout(function() { // textDisplay.innerHTML += letter; // }, index * 100); // });
+
+        });
+    }
+
+    // Iterate over each element in the memories array and run showMemory on it (attaching the event listener)
+    memories.forEach(showMemory);
+    </script>
+</body>
+
+</html>

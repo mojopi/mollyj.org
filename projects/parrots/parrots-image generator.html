@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+function makeSquareCockatoo(i) {
+        var square = document.createElement('div');
+        document.body.appendChild(square);
+        square.classList.add("gifs1");
+        square.style.position = "relative";
+        square.style.width = "150px";
+        square.style.margin = "center";
+        square.style.height = "100px";
+        square.style.backgroundPosition = "center";
+        // square.style.margin = "10px";
+        square.style.backgroundRepeat = "no-repeat";
+        // square.style.border = "1px";
+        square.style.display = "inline-block";
+
+        // square.style.backgroundColor = "green";
+
+        square.style.backgroundImage = "url(./parrots/cockatoos/" + i + ".jpg)";
+
+        square.style.backgroundSize = "cover";
+        square.style.id = "square" + i;
+    };
+
+    for (var i = 1; i < 9; i++) { makeSquareCockatoo(i); }
+
+
+    	function makeSquareMacaw(i) {
+        var square = document.createElement('div');
+        document.body.appendChild(square);
+        square.classList.add("gifs1");
+        square.style.position = "relative";
+        square.style.width = "150px";
+        square.style.margin = "center";
+        square.style.height = "100px";
+        square.style.backgroundPosition = "center";
+        // square.style.margin = "10px";
+        square.style.backgroundRepeat = "no-repeat";
+        // square.style.border = "1px";
+        square.style.display = "inline-block";
+
+        // square.style.backgroundColor = "green";
+
+        square.style.backgroundImage = "url(./parrots/macaws/" + i + ".jpg)";
+
+        square.style.backgroundSize = "cover";
+        square.style.id = "square" + i;
+    };
+
+
+   for (var i = 1; i < 32; i++) { makeSquareMacaw(i); }
+
+
+   	function makeSquareOther(i) {
+        var square = document.createElement('div');
+        document.body.appendChild(square);
+        square.classList.add("gifs1");
+        square.style.position = "relative";
+        square.style.width = "150px";
+        square.style.margin = "center";
+        square.style.height = "100px";
+        square.style.backgroundPosition = "center";
+        // square.style.margin = "10px";
+        square.style.backgroundRepeat = "no-repeat";
+        // square.style.border = "1px";
+        square.style.display = "inline-block";
+
+        // square.style.backgroundColor = "green";
+
+        square.style.backgroundImage = "url(./parrots/other/" + i + ".jpg)";
+
+        square.style.backgroundSize = "cover";
+        square.style.id = "square" + i;
+    };
+
+
+   for (var i = 1; i < 10; i++) { makeSquareOther(i); }
+
+
+</script>
+
+</body>
+</html>
