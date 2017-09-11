@@ -62,6 +62,10 @@ section {
     background-repeat: repeat;
 }
 
+nav {
+    z-index: 3;
+}
+
 nav ul {
     padding: 0;
 }
