@@ -66,7 +66,6 @@
         left: 60%;
         background-position: center;
     }
-
     /*#button2 {
         left: 70%;
         background-size: 90%;
@@ -93,66 +92,79 @@
     }
 
 
+     #description{
+        font-family: "Quicksand", sans-serif;
+        font-size: 40px;
+        padding-left:10px;
+        color:green;
+        z-index: 2;
+        position: absolute;
+        text-align: left;
+    }
+
+
+
 
 
     #section-2 {
-/*        background-color: #FF4500;
-*/        top: 100%;
+        width:100%;
+        top: 100%;
+        margin:0;
     }
 
-      #gif-container {
-        width: 400px;
-        height: 400px;
+    video{
+        width:100%;
+        height: 100%;
+    }
+/*
+    #gif-container {
+        width: 100%;
+        height: 100%;
+        top:0%;
         position: absolute;
-/*        border:solid 1px;
-*/        top: 200px;
-        left: 500px;
         background-size: contain;
         background-repeat: no-repeat;
     }
+*/
 
+    @media (max-device-width: 667px) {
 
-     @media (max-device-width: 667px) {
-
-        #title-bar{
-            font-size:50px;
+        #title-bar {
+            font-size: 50px;
         }
 
-        #opening-text{
-            font-size:20px;
+        #opening-text {
+            font-size: 20px;
             line-height: 1.5rem;
-            top:10%;
-            width:20%;
-            left:70%;
+            top: 10%;
+            width: 20%;
+            left: 70%;
         }
 
-        #wendell-portrait1{
-            width:70%;
-            top:0%;
-            left:-20%;
+        #wendell-portrait1 {
+            width: 70%;
+            top: 0%;
+            left: -20%;
             z-index: -1;
         }
 
-        #button1{
-            top:80%;
-            left:5%;
+        #button1 {
+            top: 80%;
+            left: 5%;
         }
 
-         #gif-container{
-            left:0px;
-         }
-
-
-     }
-
+        #gif-container {
+            left: 0px;
+        }
+    }
     </style>
 </head>
 
 <body>
     <audio id="wendell" src="wendell.m4a"></audio>
-   
-<!--     <audio id="snail-eyes" src="snail-eyes.m4a"></audio>
- -->    <section id="section-1">
+    <!--     <audio id="snail-eyes" src="snail-eyes.m4a"></audio>
+ -->
+    <section id="section-1">
         </div>
         <div id="title-bar">wendell</div>
         <div id="wendell-portrait1">
@@ -160,13 +172,25 @@
         <div id="opening-text">
             <p>I've started getting to know wendell recently. Here, I'm trying to capture what its been like to get to know her.</p>
         </div>
-        <a href="#section-2"><div class="button" id="button1"></div></a>
-<!--         <div class="button" id="button2"></div>
- --><!--         <div class="button" id="button3"></div>
- -->    </section>
-    <section id="section-2">
-            <div id="gif-container"></div>
+        <a href="#section-2">
+            <div class="button" id="button1"></div>
+        </a>
+        <!--         <div class="button" id="button2"></div>
+ -->
+        <!--         <div class="button" id="button3"></div>
+ -->
     </section>
+
+    <section id="section-2">
+    <div id="description">Hanging out with Wendell</div>
+    <video loop autoplay src="wendell10-9-17.mp4"></video>
+        <!-- <div id="gif-container">
+            
+        </div> -->
+    </section>
+
+
+
     <script>
     var buttons = Array.from(document.querySelectorAll('.button'));
 
@@ -174,7 +198,7 @@
     var explanations = {
         "button1": {
             "audio": "wendell",
-            "gif": "wendell.gif",
+            // "gif": "wendell.gif",
 
 
         },
@@ -188,7 +212,7 @@
         //     "audio": "eye-pinning",
         //     "gif": "wendell-body-language.gif"
         // },
-        
+
     };
 
 
@@ -212,7 +236,7 @@
 
             var explanationToPlay = document.getElementById(explanations[event.target.id].audio);
 
-            var gifToShow = explanations[event.target.id].gif;
+            // var gifToShow = explanations[event.target.id].gif;
 
 
 
@@ -222,8 +246,8 @@
             {
                 explanationToPlay.play();
 
-                gifContainer.style.backgroundImage = 'url(' + gifToShow + ')';
-                gifContainer.style.backgroundPosition = explanations[event.target.id].backgroundPosition;
+                // gifContainer.style.backgroundImage = 'url(' + gifToShow + ')';
+                // gifContainer.style.backgroundPosition = explanations[event.target.id].backgroundPosition;
 
             };
 
@@ -246,7 +270,6 @@
 
     //     buttons.forEach(scroll);
     </script>
-
     <script type="text/javascript" src="jquery.js"></script>
 </body>
 

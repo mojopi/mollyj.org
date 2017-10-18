@@ -48,6 +48,7 @@
     }
 
     .button {
+        margin-left:10px;
         z-index: 10;
         position: fixed;
         top: 90%;
@@ -92,62 +93,71 @@
         text-align: center;
     }
 
-
-
-
-    #section-2 {
-/*        background-color: #FF4500;
-*/        top: 100%;
+    #description {
+        position:absolute;
+        padding-left:10px;
+        font-family: "Quicksand", sans-serif;
+        font-size: 40px;
+        color:green;
     }
 
-      #gif-container {
+
+
+video{width:100%;
+height:100%;}
+
+    #section-2 {
+        /*        background-color: #FF4500;
+*/
+        top: 100%;
+        margin:0;
+    }
+
+   /* #gif-container {
         width: 100%;
         height: 100%;
         position: absolute;
-        border:solid 1px;
-    /*    top: 10%;
+        border: solid 1px;
+        /*    top: 10%;
         left: 25%;*/
         background-size: contain;
         background-repeat: no-repeat;
     }
+*/
+    @media (max-device-width: 667px) {
 
-     @media (max-device-width: 667px) {
-
-        #title-bar{
-            font-size:50px;
+        #title-bar {
+            font-size: 50px;
         }
 
-        #opening-text{
-            font-size:20px;
+        #opening-text {
+            font-size: 20px;
             line-height: 1.5rem;
-            top:10%;
-            width:20%;
-            left:70%;
+            top: 10%;
+            width: 20%;
+            left: 70%;
         }
 
-        #oakley-portrait1{
-            width:80%;
-            top:0%;
-            left:-10%;
+        #oakley-portrait1 {
+            width: 80%;
+            top: 0%;
+            left: -10%;
         }
 
-        #button1{
-            top:40%;
-            left:5%;
+        #button1 {
+            top: 40%;
+            left: 5%;
         }
 
-        #button2{
-            top:40%;
-            left:25%;
+        #button2 {
+            top: 40%;
+            left: 25%;
         }
-         #button3{
-            top:40%;
-            left:45%;
+        #button3 {
+            top: 40%;
+            left: 45%;
         }
-
-     }
-
-
+    }
     </style>
 </head>
 
@@ -155,8 +165,9 @@
     <audio id="eye-pinning" src="eye-pinning.m4a"></audio>
     <audio id="body-language" src="body-language.m4a"></audio>
     <audio id="preferences" src="preferences.m4a"></audio>
-<!--     <audio id="snail-eyes" src="snail-eyes.m4a"></audio>
- -->    <section id="section-1">
+    <!--     <audio id="snail-eyes" src="snail-eyes.m4a"></audio>
+ -->
+    <section id="section-1">
         </div>
         <div id="title-bar">Oakley</div>
         <div id="oakley-portrait1">
@@ -164,12 +175,19 @@
         <div id="opening-text">
             <p>I've started getting to know Oakley recently. Here, I'm trying to capture bits and pieces of what its been like to get to know him.</p>
         </div>
-        <a href="#section-2"><div class="button" id="button1"></div></a>
+        <a href="#section-2">
+        
+            <div class="button" id="button1"></div>
+        </a>
         <div class="button" id="button2"></div>
         <div class="button" id="button3"></div>
     </section>
     <section id="section-2">
-            <div id="gif-container"></div>
+     <div id="description">Seeing Oakley at different speeds</div>
+  
+        <video autoplay loop src="oakley-fast-slow.mp4">
+
+        </video>
     </section>
     <script>
     var buttons = Array.from(document.querySelectorAll('.button'));
@@ -178,28 +196,28 @@
     var explanations = {
         "button1": {
             "audio": "preferences",
-            "gif": "oakley-greeting.gif",
+            // "gif": "oakley-greeting.gif",
 
 
         },
         "button2": {
             "audio": "body-language",
-            "gif": "oakley-pet.gif",
+            // "gif": "oakley-pet.gif",
 
 
         },
         "button3": {
             "audio": "eye-pinning",
-            "gif": "oakley-body-language.gif"
+            // "gif": "oakley-body-language.gif"
         },
-        
+
     };
 
 
 
     var counter = 0;
 
-    var gifContainer = document.getElementById("gif-container");
+    // var gifContainer = document.getElementById("gif-container");
 
 
     function playExplanation(element) {
@@ -216,7 +234,7 @@
 
             var explanationToPlay = document.getElementById(explanations[event.target.id].audio);
 
-            var gifToShow = explanations[event.target.id].gif;
+            // var gifToShow = explanations[event.target.id].gif;
 
 
 
@@ -226,8 +244,8 @@
             {
                 explanationToPlay.play();
 
-                gifContainer.style.backgroundImage = 'url(' + gifToShow + ')';
-                gifContainer.style.backgroundPosition = explanations[event.target.id].backgroundPosition;
+                // gifContainer.style.backgroundImage = 'url(' + gifToShow + ')';
+                // gifContainer.style.backgroundPosition = explanations[event.target.id].backgroundPosition;
 
             };
 
@@ -250,7 +268,6 @@
 
     //     buttons.forEach(scroll);
     </script>
-
     <script type="text/javascript" src="jquery.js"></script>
 </body>
 
