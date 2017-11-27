@@ -1,0 +1,33 @@
+[
+
+  {
+  'id': 'PoS',
+  'link': 'program-of-study.html',
+  'innerText': 'program of study'
+
+ },
+ {
+  'id': 'snailophilia',
+  'image': 'snail-sketch.png',
+  'link': 'snailography.html',
+  'innerText': 'snailography'
+
+ }, 
+
+ {
+  'id': 'birdology',
+  'image': 'birdology.png',
+  'link': 'birdology.html',
+  'innerText': 'birdology'
+ },
+
+  {
+  'id': 'sound-collection',
+  'image': 'sound-collection.png',
+  'link': 'sound-collection.html',
+  'innerText':'listening in'
+
+ }
+
+
+]

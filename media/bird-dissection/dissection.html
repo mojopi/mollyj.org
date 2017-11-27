@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+  
+
+    button {
+        position: relative;
+        width: 180px;
+        height: 100px;
+        border: 3px solid black;
+        font-style: courier;
+        font-size: 25px;
+        left: 5%;
+        text-align: center;
+        margin:10px;
+        font-family:courier;
+    }
+
+    #list {
+        position: fixed;
+        left: 0;
+        width: 30%;
+        height: 100%;
+    }
+
+    #container {
+        position: fixed;
+        left: 30%;
+        width: 70%;
+        height: 100%;
+        font-family:courier;
+    }
+
+    .description {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="list">
+        <button id='a'>context</button>
+        <button id='b'>"whiskers"</button>
+        <button id='c'>chest</button>
+    </div>
+    <div id="container">
+        <div id='description-a' class='description hide'>
+            When I eat berries growing in the forest, I close my eyes to enjoy their small bursts of tartness. They remind my tastebuds that that the things I buy at the grocery store, may technically be the same berries, but their essence is gone — their sweetness bleached and their size inflated by industrial farming practices. The same happens with the animals we eat and the animals whose bodies we study.
+            <br>
+            <br> I was a biology major and teacher so in college and while teaching, I dissected many animals — hagfish, fish, squid, sharks, fetal pigs, and fetal pigs. Their bodies arrived in the mail from the Carolina scientific supply company. Did this company raise these animals? Did they capture them in the wild? I was too scared to answer the questions that loomed in my mind. And, frankly, it was easy to push my questions out of my mind to get my schoolwork done. A piece of steak at a restuarant doesn't look like a cow and that makes it easy for people to put the cow who died for their meal out of their head. Similarly, the animals from the Carolina Scientific Supply Company hardly felt like animals at all. Their bodies had been rubbarized in chemicals and then they had been wrapped in plastic. They arrived soaking in clear perservatives whos smell made people cough. Some animals' blood vessels had been dyed so we could recognize their different arteries and veins.
+            <br>
+            <br> Dissection manuals accompanied the animals. But, frankly, it was more like they were accompanying the manuals. Their bodies had been turned into diagrams so that they could match the clean cartoons in our textbooks. We've gotten quite good at taking other creatures and making their bodies fit our constructs — objects devoid of life.
+            <br>
+            <br> Several weeks ago I looked into the insides of a beautiful thrush who my friend had found dead. This was different fro the dissection I had done in the past because in looking into this thrush, my friend and I were really trying to <i>see</i> the bod of the thrush, not how it fit and matched a manual or a textbook. As a result, we saw a lot.
+            <br>
+            <br> We even saw things we didn't yet words for, and this felt like try discovery. We saw different type of feathers, we saw elastic skin that seemed to help the thrush flap it's wings, we saw rings around it's wind pipe, black textured insides of it's stomach, shimmering lungs, and whiskers around it's beak. We also saw things that we had previously "learned" but not <i>really</i> known before. We discovered the proportions of its leg bones, their thinness, its tiny hip socket, its large heart, and how its muscles threaded from its chest to the top of its wings.
+            <br>
+            <br> Here's some of what we <i>saw</i> the day we looked inside a beautiful thrush. It was quite an intimate and sacred activity to look inside another being.
+            </p>
+        </div>
+        <div style="background-image:url(1.JPG);" id='description-b' class='description hide'></div>
+    </div>
+
+    <script>
+    var container = document.querySelector("#container");
+    var descriptions = Array.from(document.querySelectorAll('.description'));
+    console.log("I found some descriptions:", descriptions);
+
+
+    var buttons = Array.from(document.querySelectorAll('button'));
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            var myId = button.getAttribute('id');
+            console.log("You just clicked the button", myId);
+
+            descriptions.forEach(function(description) {
+                console.log("I'm hiding", description);
+                description.classList.add('hide');
+                description.classList.remove('show');
+            });
+
+            var descriptionToUnhide = document.querySelector('#description-' + myId);
+            console.log("I'm going to try to unhide", descriptionToUnhide);
+            descriptionToUnhide.classList.remove('hide');
+            descriptionToUnhide.classList.add('show');
+        });
+    });
+
+    </script>
+    </body>
+    </html>

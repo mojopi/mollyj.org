@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+        margin: 0;
+    }
+
+    #face {
+        top: 0%;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-image: url(face.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        position: absolute;
+        /*        border-radius: 50%;
+*/
+        /*        border: solid black 1px;
+*/
+        z-index: 1;
+    }
+
+    #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        opacity: 0.2;
+        top: 180px;
+        left: 230px;
+    }
+
+    #box2 {
+        width: 40px;
+        height: 40px;
+        background-color: magenta;
+        opacity: 0.2;
+        top: 460px;
+        left: 759px;
+    }
+
+    #box3 {
+        width: 300px;
+        height: 40px;
+        background-color: aqua;
+        opacity: 0.2;
+        top: 280px;
+        left: 580px;
+    }
+
+    #box4 {
+        width: 20px;
+        height: 180px;
+        background-color: blue;
+        opacity: 0.2;
+        top: 290px;
+        left: 490px;
+    }
+
+    @media (max-device-width: 667px) {
+
+        #face {
+            background-position: -200px;
+        }
+
+        #box1 {
+
+            top: 115px;
+            left: -72px;
+        }
+
+        #box2 {
+
+            top: 419px;
+            left: 313px;
+        }
+
+        #box3 {
+
+            opacity: 0.2;
+            top: 200px;
+            left: 163px;
+        }
+
+
+        #box4 {
+
+            opacity: 0.2;
+            top: 200px;
+            left: 153px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <audio id="eyelashes" src="eyelashes.m4a"></audio>
+    <audio id="nostril" src="nostril.m4a"></audio>
+    <audio id="blue-eyes" src="blue-eyes.m4a"></audio>
+    <audio id="pimples" src="pimples.m4a"></audio>
+
+    <div id="face">
+        <div class="box" id="box1"> </div>
+        <div class="box" id="box2"> </div>
+        <div class="box" id="box3"> </div>
+        <div class="box" id="box4"> </div>
+    </div>
+    <script>
+    var storyDivs = Array.from(document.querySelectorAll('.box'));
+
+
+    var audioStories = {
+        "box1": { "audio": "eyelashes" },
+        "box2": { "audio": "pimples" },
+        "box3": { "audio": "blue-eyes" },
+        "box4": { "audio": "nostril" },
+    };
+
+    var counter = 0;
+
+
+    function playStory(element) {
+
+
+        element.addEventListener("click", function(event) {
+        	console.log(element);
+
+            counter = counter + 1;
+            console.log(counter);
+
+
+            var storyToPlay = document.getElementById(audioStories[event.target.id].audio);
+
+            if (counter % 2 == 1)
+
+            { storyToPlay.play() };
+
+            if (counter % 2 == 0) { storyToPlay.pause() };
+
+        });
+
+        // if (counter%2 = 1) {
+        //     element.addEventListener("click", function() {
+        //             console.log("again!");
+        //             storyToPlay.play();
+        //         }
+
+        //     )
+        // };
+
+
+
+
+
+    };
+
+    storyDivs.forEach(playStory);
+    </script>
+</body>
+
+</html>

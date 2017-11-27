@@ -1,0 +1,16 @@
+[
+ { 'id': 'oakley',
+ 	'image': 'oakley/oakley-portrait1.png',
+  'link': './media/oakley/index.html',
+  'innerText': 'Oakley'
+ }, 
+
+  { 'id': 'wendell', 	
+  	'image': 'wendell/wendell-portrait.png',
+  'link': './media/wendell/index.html',
+    'innerText': 'Wendell'
+
+ },
+
+
+]

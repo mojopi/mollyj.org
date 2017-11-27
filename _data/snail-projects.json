@@ -1,0 +1,19 @@
+[
+ { 'id': 'video',
+  'image': 'videos.png',
+  'link': 'https://vimeo.com/album/4872845'
+ }, 
+
+ {
+  'id': 'tot-lot',
+  'image': 'tot-lot.png',
+  'link': 'tot-lot.html'
+ }, 
+
+  {
+  'id': 'explanations',
+  'image': 'explanations.png',
+  'link': 'explanations.html'
+ }
+
+]

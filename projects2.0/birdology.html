@@ -1,0 +1,16 @@
+---
+layout: project-default
+---
+<style>
+  
+</style>
+
+<h1>Birdology</h1>
+<p>Observing, admiring, and getting to know birds.</p>
+
+
+{% for project in site.data.bird-projects %}
+<div id='{{ project.id }}' class='project' style='background-image: url(/media/{{ project.image }}); width: 250px; height: 300px; position: relative; border-radius: 5px;'>
+  <a href='{{ project.link }}' style='position: absolute; height: 100%; width: 100%'></a>
+</div>
+{% endfor %}
