@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+
+    <style>
+
+
+    .name {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    z-index: 10;
+    margin: 10px;
+    width: 205px;
+    height: 50px;
+    padding-top: 40px;
+    font-family: 'cabin sketch', cursive;
+    font-size: 20px;
+    text-align: center;
+    border: dotted black 1px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+    #section-2 {
+        width:100%;
+        position: absolute;
+        height: 100%;
+        top: 200%;
+        background-color: pink;
+    }
+
+    .cloverButton {
+    position: relative;
+    z-index: 3;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    border-radius:50%;
+}
+
+
+
+#clover {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-image:url(../media/clover-snail.png);
+    background-repeat: no-repeat;
+}
+
+#clover-button1 {
+    background-size: 90%;
+    background-position: 7px 15px;
+    background-color: rgba(156, 107, 135, 1);
+    background-image: url("clover-poop-emoji.png");
+    ;
+}
+
+#clover-button2 {
+    background-size: 40%;
+
+    background-position: 2px 18px;
+    background-color: rgba(152, 251, 152, 0.8);
+    background-image: url("clover-snail-moving.png");
+    background-size: contain;
+    ;
+}
+
+#clover-video-container {
+    background-position: center;
+    left: 200px;
+/*    width:90%;
+*/    top: 100px;
+    border: solid black width: 1000px;
+    height: 600px;
+    width:600px;
+    position: absolute;
+}
+
+#secretButton {
+    border-radius: 0%;
+    position: absolute;
+    width: 75px;
+    height: 50px;
+    /*        border: 1px solid black;
+*/
+    top: 93%;
+    left: 94%;
+    opacity: 0.1;
+    background-color: white;
+    /*        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
+}
+
+@media (max-device-width: 667px) {
+
+    .cloverButton {
+        width: 50px;
+        height: 50px;
+    }
+
+    #clover-button1 {
+        background-size: 90%;
+        background-position: 7px 15px;
+    }
+
+    #clover-button2 {
+        background-size: 90%;
+        background-position: 2px 18px;
+    }
+
+    #clover-video-container {
+        top: 200px;
+        left: 0px;
+        width: 370px;
+        height: 300px;
+    }
+}
+
+h1{
+        font-family: 'Cabin Sketch', cursive;
+        font-size:80px;
+        text-align: center;
+
+}
+    </style>
+
+</head>
+
+<body>
+<section id="section-1">
+<h1>Weird Stuff with Clover</h1>
+<a style="width:200px; height:200px;" href="#section-2"><div id="clover"></div></a>
+</section>
+
+
+<section id="section-2">
+        <audio id="cloverIntro" src="cloverIntro2.m4a"></audio>
+     
+        <div class="cloverButton" id="clover-button1"></div>
+        <a href="https://youtu.be/8XYAmdhoBHY"><div class="cloverButton" id="clover-button2"></div></a>
+        <div class="cloverButton" id="clover3"></div>
+        <div class="cloverbutton" id="clover4"></div>
+        <div class="cloverbutton" id="clover5"></div>
+        <video id="clover-video-container"> </video>
+        <div class="cloverButton" id="secretButton"></div>
+    </section>
+    <script type="text/javascript">
+    var cloverSection = document.getElementById("section-3");
+    var cloverIntro = document.getElementById("cloverIntro");
+
+    var cloverName = document.getElementById("clover");
+    clover.addEventListener("click", function(event) {
+
+        cloverIntro.play()
+        console.log(event)
+    });
+
+
+    // cloverIntro.onended = function() { cloverSection.style.backgroundColor = "pink" };
+
+    var cloverButtons = Array.from(document.querySelectorAll('.cloverButton'));
+
+    var cloverExplanations = {
+
+        "clover-button1": {
+            // "audio": "snail-poop.m4a",
+            "video": "clover-snail-poop1.mp4"
+
+
+        },
+
+        "clover2": {
+            // "audio": "snail-eat",
+        },
+
+        "clover3": {
+            // "audio": "snail-eat",
+
+        },
+
+        "secretButton": {
+            "video": "secret-Button.mp4",
+
+        },
+
+        "clover5": {
+            "audio": "snail-eat",
+
+        },
+
+
+    };
+
+    var counter = 0;
+
+    var cloverVideoContainer = document.getElementById("clover-video-container");
+
+
+    function playCloverExplanation(element) {
+
+
+        element.addEventListener("click", function(event) {
+            console.log(element);
+
+            counter = counter + 1;
+            console.log(counter);
+
+
+            // var explanationToPlay = document.getElementById(cloverExplanations[event.target.id].audio);
+
+            var videoToShow = cloverExplanations[event.target.id].video;
+
+
+
+
+            if (counter % 2 == 1)
+
+            {
+                // explanationToPlay.play();
+
+                cloverVideoContainer.src = videoToShow;
+                cloverVideoContainer.play();
+                // videoContainer.style.backgroundPosition = explanations[event.target.id].backgroundPosition;
+
+            };
+
+            if (counter % 2 == 0) {
+                // explanationToPlay.pause();
+                cloverVideoContainer.pause();
+
+            };
+
+        });
+
+    };
+
+    cloverButtons.forEach(playCloverExplanation);
+    </script>
+
+    <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>
