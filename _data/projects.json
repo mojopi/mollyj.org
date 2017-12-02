@@ -2,6 +2,7 @@
 
   {
   'id': 'PoS',
+  'image': 'program-of-study.png',
   'link': 'program-of-study.html',
   'innerText': 'program of study'
 
