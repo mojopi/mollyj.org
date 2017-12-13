@@ -11,7 +11,7 @@
 
    { 'id': 'dissection',
   'image': 'dissection.png',
-  'link': './media/bird-dissection/dissection.html'
+  'link': './bird-dissection/index.html'
  }
 
 
