@@ -1,32 +1,43 @@
 [
-    {
-        'id': 'videos',
-        'image': 'tot-lot-videos.png',
-        'link': '',
-        'innerText': 'videos'
-    },
 
-    {
-        'id': 'drawings',
+   
+
+
+    {   'id': 'drawings',
         'image': 'tot-lot-drawing.png',
         'link': '../media/tot-lot-documentation/drawings.html',
         'innerText': 'drawings'
     },
-
-    {
-        'id': 'observations',
+    {   'id': 'observations',
         'image': 'observations.png',
         'link': '../media/tot-lot-documentation/observations.html',
-        'innerText': 'observations'
+        'innerText': 'noticings'
 
     },
 
-       {
-        'id': 'blog',
+    {   'id': 'blog',
         'image': 'tot-lot-blog.png',
         'link': 'tot-lot-blog.html',
         'innerText': 'journal'
 
+    },
+
+    
+
+     {   'id': 'light-table',
+        'image': 'tot-lot-light-table.png',
+        'link': '../media/tot-lot-documentation/light-table.html',
+        'innerText': 'light table'
+    },
+
+
+
+
+     {   'id': 'work',
+        'image': 'tot-lot-work.png',
+        'link': '../media/tot-lot-documentation/work.html',
+        'innerText': 'people working'
     }
+
 
 ]
