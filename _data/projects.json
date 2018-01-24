@@ -21,6 +21,14 @@
   'link': 'birdology.html',
   'innerText': 'birdology'
  },
+
+ {
+  'id': 'gesture',
+  'image': 'gesture.png',
+  'link': './gesture-zoologic/index.html',
+  'innerText':'gesture zoologic'
+
+ },
    {
   'id': 'weird-stuff',
   'image': 'clover.png',
