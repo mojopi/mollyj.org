@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+    }
+
+    #background {
+        background-image: url(./sky.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        width: 100%;
+        position: fixed;
+        z-index: -2;
+    }
+
+    #subtitle,
+    #title {
+        font-family: 'Cabin Sketch', cursive;
+        padding: 20px;
+    }
+
+    #title {
+        font-size: 80px;
+        padding: 20px;
+    }
+
+    #subtitle {
+        font-size: 40px;
+    }
+
+    #cover-img {
+        background-image: url(./imgs/cover5.jpg);
+        width: 80%;
+        left: 10%;
+        height: 400px;
+        background-color: blue;
+        /*    border-radius: 50%;*/
+        /*        left:7%;
+*/
+        position: relative;
+        /*        left: 70%;
+*/
+        background-size: contain;
+        margin: 0;
+        background-repeat: no-repeat;
+    }
+
+    #hummingbird-drawing {
+        width: 200px;
+        height: 180px;
+        background-image: url(flying-hummingbird.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 60%;
+    }
+
+    #text {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    #days {
+        padding-left: 30px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px;
+    }
+    </style>
+    <div id="background"></div>
+    <title>Hummingbirds</title>
+</head>
+
+<body>
+    <!--     <button>play sound</button>
+ -->
+    <div id="title">Getting to know Hummingbirds…</div>
+    <div id="subtitle">Attempts at portraiture in my neighborhood</div>
+    <!--     <div id="cover-img"></div>
+ -->
+    <div id="text">
+        <p> I recently moved to San Diego and am fixated on hearing hummingbird calls. On my bike to work. On walks to the beach. En route to the grocery store. I hear them everywhere and I'm obsessed with these magical creatures. Their small size, boldness, speedy dives and displays, shimmering feathers, the sound of their wings — their whole gestault speaks to my soul. I want to get to know them and to see them upclose so I've started to photograph them.</p>
+        <p>Here is my journal of what I've done and learned each day.</p>
+    </div>
+    <div id="hummingbird-drawing"></div>
+    <div id="days">
+        <a href="day1.html">
+            <p>Day 1</p>
+        </a>
+        <a href="day2.html">
+            <p>Day 2</p>
+        </a>
+        <a href="day3.html">
+            <p>Day 3</p>
+        </a>
+        <a href="day4.html">
+            <p>Day 4</p>
+        </a>
+        <a href="day5.html">
+            <p>Day 5</p>
+        </a>
+    </div>
+    <audio controls id="sound" src="hummingbird-flying-sound.mp3" autoplay></audio>
+    <iframe width=0; height=0; src="hummingbird-flying-sound.mp3" allow="autoplay"></iframe>
+    <script>
+
+    function fly() {
+        var hummingbird = document.getElementById("hummingbird-drawing");
+        hummingbird.style.left = Math.floor(Math.random() * 800) + "px";
+        hummingbird.style.top = Math.floor(Math.random() * 800) + "px";
+
+
+    }
+
+
+    var flying = setInterval(fly, 400);
+
+
+//     function stopFlying() {
+// var timer = 0;
+//         while (timer <= 9) {
+//             timer = timer + 1;
+//             console.log(timer)
+//             await sleep(1000);
+
+//         }
+//     }
+
+//     stopFlying();
+    </script>
+</body>
+
+</html>

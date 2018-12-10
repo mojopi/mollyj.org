@@ -28,14 +28,8 @@
   'link': './gesture-zoologic/index.html',
   'innerText':'gesture zoologic'
 
- },
-   {
-  'id': 'weird-stuff',
-  'image': 'clover.png',
-  'link': 'clover.html',
-  'innerText':'Weird Stuff with Clover'
-
- },
+ }
+ 
 
 
 

@@ -1,4 +1,9 @@
 [
+
+	 { 'id': 'hummingbirds',
+  'image': 'hummingbirds.png',
+  'link': './hummingbirds/index.html'
+ },
  { 'id': 'bird-videos',
   'image': 'bird-videos.png',
   'link': 'https://vimeo.com/229143889'
