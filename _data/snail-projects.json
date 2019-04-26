@@ -10,6 +10,7 @@
   'link': 'tot-lot.html'
  }, 
 
+
   {
   'id': 'explanations',
   'image': 'explanations.png',
@@ -23,5 +24,11 @@
   'innerText':'Weird Stuff with Clover'
 
  },
+
+  {
+  'id': 'bonanza',
+  'image': 'observations.png',
+  'link': './bonanza/index.html'
+ }, 
 
 ]
