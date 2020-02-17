@@ -1,12 +1,31 @@
 [
 
+
+
+   {
+  'id': 'TTL',
+  'image':'TTL.png',
+  'link': 'https://thisteenagelife.org',
+  'innerText': 'this teenage life podcast'
+
+ },
+
   {
+  'id': 'stories',
+  'image':'stories.png',
+  'link': 'https://mojopi.github.io/childrens-stories',
+  'innerText': 'stories by kids for kids'
+
+ },
+
+   {
   'id': 'PoS',
   'image': 'program-of-study.png',
   'link': 'program-of-study.html',
   'innerText': 'program of study'
 
  },
+
  {
   'id': 'snailophilia',
   'image': 'snail-sketch.png',
@@ -28,7 +47,16 @@
   'link': './gesture-zoologic/index.html',
   'innerText':'gesture zoologic'
 
+ },
+
+ {
+  'id': 'code-sketches',
+  'image': 'code-sketches.png',
+  'link': 'coding.html',
+  'innerText':'coding projects'
+
  }
+ 
  
 
 

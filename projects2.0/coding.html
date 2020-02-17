@@ -1,0 +1,15 @@
+---
+layout: project-default
+---
+
+<h1>Coding</h1>
+<p>Programming as an Expressive Medium: as stories and gifts, mostly.</p>
+
+
+
+{% for project in site.data.code-projects %}
+<div id='{{ project.id }}' class='project' style='background-image: url(/media/{{ project.image }}); width: 250px; height: 300px; position: relative; border-radius: 5px;'>
+	<div class="text">{{project.innerText}}</div>
+  <a href='{{ project.link }}' style='position: absolute; height: 100%; width: 100%'></a>
+</div>
+{% endfor %}

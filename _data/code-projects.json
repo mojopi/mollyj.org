@@ -1,0 +1,37 @@
+[
+
+	 { 'id': 'cs1',
+  'image': 'cs1.png',
+  'link': 'https://mojopi.github.io/cs1',
+    'innerText': 'CS1'
+
+ },
+
+  { 'id': 'deschooling',
+  'image': 'deschooling.png',
+  'link': 'https://mojopi.github.io/story_in_pictures/',
+    'innerText': 'deschooling story'
+
+ }, 
+
+ { 'id': 'moon',
+  'image': 'lunarchive.png',
+  'link': 'lunarchive.html',
+  'innerText': 'moon present'
+
+ }, 
+
+  
+
+   { 'id': 'code-sketches',
+  'image': 'code-sketches2.png',
+  'link': 'https://mojopi.github.io',
+    'innerText': 'code sketches'
+
+
+ },
+
+  
+
+
+]

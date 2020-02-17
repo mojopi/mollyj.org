@@ -161,17 +161,17 @@ nav {
     font-size: 30px;
 }
 
-#healey {
-    background-image: url(icon-healey.png);
-    top: 17%;
+#powderhouse {
+    background-image: url(icon-powderhouse.png);
+    top: 20%;
     left: -7%;
 }
 
-#healey .icon-title {
-    margin-top: 10px;
+#powderhouse .icon-title {
+    margin-top: 0px;
 }
 
-#healey .icon-subtitle {
+#powderhouse .icon-subtitle {
     margin-top: 55px;
 }
 
@@ -252,30 +252,7 @@ nav {
     left: 60%;
 }
 
-#deschooling .icon-title {
-    margin-top: -15px;
-}
 
-#deschooling .icon-subtitle {
-    margin-top: 70px;
-}
-
-#lunarchive .icon-title {
-    margin-top: -35px;
-    margin-left: -30px;
-}
-
-#lunarchive .icon-subtitle {
-    margin-top: 70px;
-}
-
-#lunarchive {
-    background-image: url(icon-lunarchive.png);
-    width: 73px;
-    height: 73px;
-    top: 86%;
-    left: 62%;
-}
 
 #sop {
     background-image: url(icon-sop.png);
@@ -351,17 +328,7 @@ nav {
     z-index: 2;
 }
 
-#header-urbanature {
-    height: 60px;
-    width: 200px;
-    left: 10%;
-    top: 10%;
-    position: relative;
-    z-index: 2;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Cabin Sketch', cursive;
-}
+
 
 .footer-urbanature {
     width: 100%;
@@ -393,11 +360,7 @@ nav {
     height: 200px;
 }
 
-#footer-lunarchive {
-    height: 50%;
-    width: 60%;
-    border-radius: 10%;
-}
+
 
 #footer-colonie {
     width: 200px;
