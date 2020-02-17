@@ -18,13 +18,6 @@
 
  },
 
-   {
-  'id': 'PoS',
-  'image': 'program-of-study.png',
-  'link': 'program-of-study.html',
-  'innerText': 'program of study'
-
- },
 
  {
   'id': 'snailophilia',
@@ -42,10 +35,10 @@
  },
 
  {
-  'id': 'gesture',
-  'image': 'gesture.png',
+  'id': 'gesture-zoologic',
+  'image': 'program-of-study.png',
   'link': './gesture-zoologic/index.html',
-  'innerText':'gesture zoologic'
+  'innerText':'Movement zoologica'
 
  },
 
