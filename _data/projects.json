@@ -1,7 +1,5 @@
 [
 
-
-
    {
   'id': 'TTL',
   'image':'TTL.png',
@@ -10,11 +8,21 @@
 
  },
 
+ 
+
   {
   'id': 'stories',
   'image':'stories.png',
-  'link': 'https://mojopi.github.io/childrens-stories',
+  'link': 'https://mojopi.github.io/children-stories',
   'innerText': 'stories by kids for kids'
+
+ },
+
+  {
+  'id': 'realWork',
+  'image':'real-work.png',
+  'link': 'real-work.html',
+  'innerText': 'documenting projects'
 
  },
 
@@ -51,8 +59,5 @@
  }
  
  
-
-
-
 
 ]
