@@ -1,12 +1,46 @@
 [
 
-   {
-  'id': 'deryk',
-  'image':'deryk.png',
-  'link': 'vimeo.com/292866705',
-  'innerText': 'deryk's flying machine'
+   
+
+{ 'id': 'deryk',
+  'image': 'deryk.png',
+  'link': 'https://vimeo.com/292866705',
+  'innerText': 'deryks flying machine'
+
+ },
+
+
+   { 'id': 'olivia',
+  'image': 'olivia.png',
+  'link': 'https://vimeo.com/292238281',
+  'innerText': 'directing'
+
+ },
+
+  { 'id': 'omari',
+  'image': 'omari.png',
+  'link': 'https://vimeo.com/295472004',
+  'innerText': 'omaris soundtrack'
+
+ },
+
+   { 'id': 'sondre',
+  'image': 'sondre.png',
+  'link': 'https://vimeo.com/296115849',
+  'innerText': 'drone magic'
+
+ },
+ 
+
+   { 'id': 'penelope',
+  'image': 'penelope.png',
+  'link': 'https://vimeo.com/297148694',
+  'innerText': 'editing'
 
  }
+ 
+
+
  
  
 
