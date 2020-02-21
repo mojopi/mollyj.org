@@ -1,0 +1,15 @@
+---
+layout: project-default
+---
+
+<h1>Blackout Poetry</h1>
+<p>Combinging blackout poetry with dance and photography to inspire storytelling ideas.</p>
+
+
+
+{% for project in site.data.blackout-poetry %}
+<div id='{{ project.id }}' class='project' style='background-image: url(/media/{{ project.image }}); width: 250px; height: 300px; position: relative; border-radius: 5px;'>
+	<div class="text">{{project.innerText}}</div>
+  <a href='{{ project.link }}' style='position: absolute; height: 100%; width: 100%'></a>
+</div>
+{% endfor %}

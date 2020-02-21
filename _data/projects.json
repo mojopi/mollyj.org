@@ -26,6 +26,13 @@
 
  },
 
+{
+  'id': 'blackoutPoetry',
+  'image':'blackoutPoetry.png',
+  'link': 'blackoutPoetry.html',
+  'innerText': 'Blackout Poetry'
+
+ },
 
  {
   'id': 'snailophilia',

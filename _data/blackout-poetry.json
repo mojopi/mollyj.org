@@ -1,0 +1,20 @@
+[
+
+   {
+  'id': 'dance',
+  'image':'dancePoetry.png',
+  'link': 'https://mojopi.github.io/blackout-poems2/#/',
+  'innerText': 'mythology || dance' 
+ },
+
+   {
+  'id': 'macro',
+  'image':'macroPoetry.png',
+  'link': 'https://mojopi.github.io/blackout-poems/#/',
+  'innerText': 'macrophotography'
+
+ }
+ 
+ 
+
+]
