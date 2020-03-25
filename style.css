@@ -13,6 +13,7 @@ h1 {
 
 
 section {
+    height: 100%;
     margin: 0;
     width: 75%;
     margin-left: auto;
@@ -25,8 +26,8 @@ section {
 section {
     /*Workaround to fix extra space between sections, which for some reason would disappear when we set the border*/
     /*border: 1px dotted black;*/
-    margin-bottom: -1rem;
-}
+/*    margin-bottom: -1rem;
+*/}
 
 .section-container {
     background-size: cover;
@@ -44,6 +45,7 @@ section {
 
 #about {
     background-image: url(sky-1.png);
+    width:100%;
 }
 
 #work {
@@ -81,10 +83,22 @@ nav li {
 }
 
 @font-face {
+    font-family: "Quicksand Light";
+    src: url(Quicksand-Light.ttf);
+}
+@font-face {
+    font-family: "Itim";
+    src: url(Itim.ttf);
+}
+@font-face {
     font-family: "Alphabetized Cassette Tapes";
     src: url(alphabetized-cassette-tapes.ttf);
 }
 
+@font-face {
+    font-family: "Open Sans Light";
+    src: url(OpenSans-Light.ttf);
+}
 nav {
     min-width: 5em;
     text-align: center;
@@ -95,8 +109,12 @@ nav {
     left: 50%;
     top: 40%;
     transform: translateX(-50%) translateY(-50%);
-    font-family: "Alphabetized Cassette Tapes";
-    font-size: 50px;
+/*    font-family: "Alphabetized Cassette Tapes";
+*/    
+
+    font-family: 'Cabin Sketch', cursive;
+
+ font-size: 50px;
 }
 
 #stars {
@@ -125,9 +143,16 @@ nav {
 .description {
     position: relative;
     left: 10%;
-/*    width: 50%;
-*/    font-family: "alphabetized cassette tapes";
-    font-size: 35px;
+    width: 50%;
+   
+/*font-family: "alphabetized cassette tapes";
+*/  
+
+/*font-family: "Itim";
+*/
+
+font-family:"open sans light";
+font-size: 20px;
 }
 
 #envelope {
@@ -311,9 +336,11 @@ nav {
 }
 
 .work-description {
-    font-family: "alphabetized cassette tapes";
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 40px;
+/*    font-family: "alphabetized cassette tapes";
+*/    
+font-family: "Quicksand Light";
+background-color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
     position: relative;
     top: 20px;
     left: 20px;
